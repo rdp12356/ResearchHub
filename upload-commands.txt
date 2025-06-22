@@ -1,0 +1,40 @@
+# GitHub Upload Commands for rdp12356
+
+## Step 1: Extract and Setup
+tar -xzf cyberguardian-platform.tar.gz
+cd cyberguardian-platform/
+
+## Step 2: Initialize Git
+git init
+git add .
+git commit -m "Initial commit: CyberGuardian cybersecurity platform"
+
+## Step 3: Create GitHub Repository
+Go to: https://github.com/new
+- Repository name: cyberguardian-platform
+- Description: Comprehensive cybersecurity platform with security tools and analytics
+- Choose Public or Private
+- DO NOT initialize with README
+- Click "Create repository"
+
+## Step 4: Connect and Push
+git remote add origin https://github.com/rdp12356/cyberguardian-platform.git
+git branch -M main
+git push -u origin main
+
+## When prompted for credentials:
+- Username: rdp12356
+- Password: [Use your GitHub Personal Access Token]
+
+## Get Personal Access Token:
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token"
+3. Select "repo" scope
+4. Copy the token and use as password
+
+## Your repository will be live at:
+https://github.com/rdp12356/cyberguardian-platform
+
+## Ready for deployment:
+- Vercel: Import from https://github.com/rdp12356/cyberguardian-platform
+- Kinsta: Connect Git repository rdp12356/cyberguardian-platform
